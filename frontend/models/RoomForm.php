@@ -10,15 +10,14 @@ use yii\db\ActiveRecord;
  */
 class RoomForm extends ActiveRecord
 {
-/*    public static function tableName()
+    public static function tableName()
     {
         return '{{room}}';
     }
 
-    public function rules()
+/*    public function rules()
 {
     return [
         [['price'], 'required'],
-        ];
-    }*/
+        ];*/
 }

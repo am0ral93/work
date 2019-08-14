@@ -3,7 +3,9 @@
 ?>
 <h1>room/index</h1>
 
-<?php foreach ($roomList as $roomForm): ?>
-    <?php echo $roomForm->kvartira . "  " .  $roomForm->price; ?>
+// Пускай здесь будет название базы room или название модели roomForm - нихуя не работает.
+
+<?php foreach ($roomList as $room): ?>
+    <?php echo $room->kvartira . "  " .  $roomForm->price; ?>
 <hr>
     <?php endforeach; ?>
