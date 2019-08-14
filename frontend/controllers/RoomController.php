@@ -5,7 +5,6 @@ namespace frontend\controllers;
 use yii\web\Controller;
 use yii\data\Pagination;
 use frontend\models\RoomForm;
-use \yii\web\Controller;
 
 class RoomController extends Controller
 {

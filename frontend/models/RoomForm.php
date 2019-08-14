@@ -3,7 +3,6 @@ namespace frontend\models;
 
 use Yii;
 use yii\base\Model;
-use frontend\controllers\RoomController;
 use yii\db\ActiveRecord;
 
 /**
