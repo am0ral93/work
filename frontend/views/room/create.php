@@ -1,9 +1,20 @@
 <?php
-/* @var $this yii\web\View */
-?>
-<h1>room/create</h1>
 
-<p>
-    You may change the content of this page by modifying
-    the file <code><?= __FILE__; ?></code>.
-</p>
+use yii\helpers\Html;
+
+/* @var $this yii\web\View */
+/* @var $model frontend\models\RoomForm */
+
+$this->title = 'Create Room Form';
+$this->params['breadcrumbs'][] = ['label' => 'Room Forms', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="room-form-create">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <?= $this->render('_form', [
+        'model' => $model,
+    ]) ?>
+
+</div>

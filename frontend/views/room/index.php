@@ -1,11 +1,36 @@
 <?php
+
+use yii\helpers\Html;
+use yii\grid\GridView;
+use frontend\models\RoomForm;
+
 /* @var $this yii\web\View */
+/* @var $dataProvider yii\data\ActiveDataProvider */
+
+$this->title = 'Room Forms';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
-<h1>room/index</h1>
+<div class="room-form-index">
 
-// Пускай здесь будет название базы room или название модели roomForm - нихуя не работает.
+    <h1><?= Html::encode($this->title) ?></h1>
 
-<?php foreach ($roomList as $room): ?>
-    <?php echo $room->kvartira . "  " .  $roomForm->price; ?>
-<hr>
-    <?php endforeach; ?>
+    <p>
+        <?= Html::a('Create Room Form', ['create'], ['class' => 'btn btn-success']) ?>
+    </p>
+
+
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+
+            'id',
+            'kvartira',
+            'price',
+
+            ['class' => 'yii\grid\ActionColumn'],
+        ],
+    ]); ?>
+
+
+</div>
