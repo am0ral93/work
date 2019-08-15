@@ -17,8 +17,8 @@ class m190813_182314_room extends Migration
 
         $this->createTable('{{%room}}', [
             'id' => $this->primaryKey(),
-            'kvartira' => $this->string()->notNull()->unique(),
-            'price' => $this->string()->notNull()->unique(),
+            'kvartira' => $this->string()->notNull(),
+            'price' => $this->string()->notNull(),
         ], $tableOptions);
     }
 
